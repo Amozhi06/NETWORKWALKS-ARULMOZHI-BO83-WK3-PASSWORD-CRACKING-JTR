@@ -13,7 +13,7 @@ A practical cybersecurity lab demonstrating offline cryptographic hash extractio
 
 | Target File | Extracted Hash File | Recovered Plaintext | Attack Type | Captured Flag |
 | :--- | :--- | :--- | :--- | :--- |
-| **`My Locked PDF1.pdf`** | `hash1.txt`| `good-luck` | Dictionary| `Congratulations! You have captured your 1st flag.` |
+| **`My Locked PDF1.pdf`** | `hash1.txt`| `good-luck` | Dictionary| `nw{cybersecurity_flag_captured_2608}` |
 | **`My Locked PDF2.pdf`** | `hash2.txt` | `password1` | Dictionary | `nw{networkwalks_persistence_jtr_270521}` |
 | **`My Locked PDF3.pdf`** | `hash3.txt` | `1qaz2wsx` | Dictionary | `nw{networkwalks_flag_200021_1}`|
 
