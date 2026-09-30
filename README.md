@@ -70,7 +70,7 @@ Configured Johnny GUI to point to `john.exe`, imported `hash1.txt`, and ran **St
 Imported `hash2.txt` into Johnny GUI and initiated the dictionary attack.
 * **Recovered Key:** `password1`
 
-![Step 6 - Target 2 Cracked in Johnny](screenshots/Screenshot%202026-09-30%20163147.png)
+![Step 6 - Target 2 Cracked in Johnny](06_target2_cracked.png)
 
 ---
 
