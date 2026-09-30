@@ -19,9 +19,9 @@ In this lab, I conducted an offline cryptanalytic audit against three password-l
 
 | Target File | Extracted Hash File | Recovered Password | Attack Type | Captured Flag |
 | :--- | :--- | :--- | :--- | :--- |
-| **`My Locked PDF1.pdf`** | `hash1.txt` | `password1` | Dictionary[cite: 1] | `Congratulations! You have captured your 1st flag.`[cite: 1] |
-| **`My Locked PDF2.pdf`**[cite: 10] | `hash2.txt` | `good-luck` | Dictionary | `nw{networkwalks_persistence_jtr_270521}` |
-| **`My Locked PDF3.pdf`**[cite: 9, 10] | `hash3.txt` | `1qaz2wsx` | Dictionary | `nw{networkwalks_flag_200021_1}` |
+| **`My Locked PDF1.pdf`** | `hash1.txt` | `password1` | Dictionary| `Congratulations! You have captured your 1st flag.`|
+| **`My Locked PDF2.pdf`**| `hash2.txt` | `good-luck` | Dictionary | `nw{networkwalks_persistence_jtr_270521}` |
+| **`My Locked PDF3.pdf`**| `hash3.txt` | `1qaz2wsx` | Dictionary | `nw{networkwalks_flag_200021_1}` |
 
 ---
 
