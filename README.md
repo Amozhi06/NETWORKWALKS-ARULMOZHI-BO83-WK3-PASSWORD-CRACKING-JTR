@@ -13,8 +13,8 @@ A practical cybersecurity lab demonstrating offline cryptographic hash extractio
 
 | Target File | Extracted Hash File | Recovered Plaintext | Attack Type | Captured Flag |
 | :--- | :--- | :--- | :--- | :--- |
-| **`My Locked PDF1.pdf`** | `hash1.txt`| `password1` | Dictionary| `Congratulations! You have captured your 1st flag.` |
-| **`My Locked PDF2.pdf`** | `hash2.txt` | `good-luck` | Dictionary | `nw{networkwalks_persistence_jtr_270521}` |
+| **`My Locked PDF1.pdf`** | `hash1.txt`| `good-luck` | Dictionary| `Congratulations! You have captured your 1st flag.` |
+| **`My Locked PDF2.pdf`** | `hash2.txt` | `password1` | Dictionary | `nw{networkwalks_persistence_jtr_270521}` |
 | **`My Locked PDF3.pdf`** | `hash3.txt` | `1qaz2wsx` | Dictionary | `nw{networkwalks_flag_200021_1}`|
 
 ---
@@ -82,18 +82,27 @@ Imported `hash3.txt` into Johnny GUI and recovered the keyboard walk pattern.
 
 ---
 
-### Step 8: Decrypt Target 2 & Retrieve Flag
-Authenticated `My Locked PDF2.pdf` using `good-luck` to capture the hidden flag.
-* **Flag Captured:** `nw{networkwalks_persistence_jtr_270521}`.
+### Step 8: Decrypt Target 1 & Retrieve Flag
+Authenticated `My Locked PDF1.pdf` using `good-luck` to capture the hidden flag.
+* **Flag Captured:** `nw{cybersecurity_flag_captured_2608}`.
 
-![Step 8 - Flag 2 Decrypted](screenshots/Screenshot%202026-09-30%20162910.jpg)
+![Step 8 - Flag 2 Decrypted](08_target1_flag_unlocked.jpg)
 
 ---
 
-### Step 9: Decrypt Target 3 & Retrieve Flag
+### Step 9 : Decrypt Target 2 & Retrieve Flag
+Authenticated `My Locked PDF2.pdf` using `password1` to capture the hidden flag.
+* **Flag Captured:** `nw{networkwalks_persistence_jtr_270521}`.
+
+![Step 9 - Flag 2 Decrypted](09_target2_flag_unlocked.jpg)
+
+---
+
+### Step 10: Decrypt Target 3 & Retrieve Flag
 Authenticated `My Locked PDF3.pdf` using `1qaz2wsx` to capture the hidden flag
 * **Flag Captured:** `nw{networkwalks_flag_200021_1}`
 
-![Step 9 - Flag 3 Decrypted](screenshots/Screenshot%202026-09-30%20163119.jpg)
+![Step 10 - Flag 3 Decrypted](10_target3_flag_unlocked.jpg)
 
 ---
+
