@@ -33,7 +33,7 @@ A practical cybersecurity lab demonstrating offline cryptographic hash extractio
 ### Step 1: Verify Password-Protected Target
 Target documents were inspected, confirming password encryption prompts blocking read access.
 
-![Step 1 - Locked PDF Prompt](screenshots/Screenshot%202026-09-30%20162926.png)
+![Step 1 - Locked PDF Prompt](01_locked_pdf_prompt.png)
 
 ---
 
