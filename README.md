@@ -107,4 +107,11 @@ Authenticated `My Locked PDF3.pdf` using `1qaz2wsx` to capture the hidden flag
 
 ---
 
+## Author & Acknowledgments
+
+* **Arulmozhi Muniraj**
+* **Program:** Networkwalks Cybersecurity Program (Batch B083)
+* **Institution:** SRM Institute of Science and Technology (B.Tech CSE - Cyber Security)
+* **Special Thanks:** Sir Waqas Karim (CCIE) and the entire Networkwalks mentorship team for continuous guidance and structured practical challenges.
+
 
