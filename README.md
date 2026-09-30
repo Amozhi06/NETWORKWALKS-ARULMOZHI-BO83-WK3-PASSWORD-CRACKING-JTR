@@ -62,7 +62,7 @@ Saved the isolated hash strings into separate text files (`hash1.txt`, `hash2.tx
 Configured Johnny GUI to point to `john.exe`, imported `hash1.txt`, and ran **Start new attack**.
 * **Recovered Key:** `good-luck`
 
-![Step 5 - Target 1 Cracked in Johnny](screenshots/Screenshot%202026-09-30%20163159.png)
+![Step 5 - Target 1 Cracked in Johnny](05_target1_cracked_password1.png)
 
 ---
 
