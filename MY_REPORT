@@ -10,9 +10,9 @@
 
 ## 1. Executive Summary
 
-PDF documents utilizing standard security handlers rely on symmetric ciphers to encrypt content streams, while delegating user credential validation to cryptographic hash digests stored within the file's trailer dictionary. 
+PDF documents utilizing standard security handlers rely on symmetric ciphers (e.g., AES) to encrypt content streams, while delegating user credential validation to cryptographic hash digests stored within the file's trailer dictionary. 
 
-This project conducted a security assessment against three password-locked target documents. Using offline cryptanalysis and dictionary-based techniques, the authentication signatures were extracted, parsed, and cracked. The recovered keys were subsequently validated by authenticating to each document and extracting its embedded competition flag
+This project conducted a security assessment against three password-locked target documents. Using offline cryptanalysis and dictionary-based techniques, the authentication signatures were extracted, parsed, and audited. The recovered keys were subsequently validated by authenticating to each document and extracting its embedded competition flag.
 
 ---
 
@@ -21,44 +21,31 @@ This project conducted a security assessment against three password-locked targe
 | Target File | Extracted Hash File | Recovered Plaintext | Attack Mode | Captured Flag Signature |
 | :--- | :--- | :--- | :--- | :--- |
 | **`My Locked PDF1.pdf`** | `hash1.txt` | `good-luck` | Dictionary | `nw{cybersecurity_flag_captured_2608}` |
-| **`My Locked PDF2.pdf`** | `hash2.txt` | `password1` | Dictionary | `nw{networkwalks_persistence_jtr_270521}` |
-| **`My Locked PDF3.pdf`**| `hash3.txt` | `1qaz2wsx` | Dictionary | `nw{networkwalks_flag_200021_1}` |
+| **`My Locked PDF2.pdf`**| `hash2.txt` | `password1` | Dictionary | `nw{networkwalks_persistence_jtr_270521}` |
+| **`My Locked PDF3.pdf`** | `hash3.txt` | `1qaz2wsx` | Dictionary | `nw{networkwalks_flag_200021_1}` |
 
 ---
 
 ## 3. Cryptanalytic Methodology
 
 ### 3.1 Hash Extraction Architecture (`pdf2john`)
-Direct brute-forcing via a PDF reader application triggers interface latency and software overhead. To optimize audit speed, target documents were parsed through an extractor implementing `pdf2john` specifications. This decoupled the security parameters into standardized signatures:
+Direct evaluation against a PDF reader application triggers interface latency and software overhead. To optimize audit speed, target documents were parsed through an extractor implementing `pdf2john` specifications. This decoupled the security parameters into standardized signatures:
 * **Cipher Revision & Key Length:** `$pdf$4*4*128...`
 * **Salt & Initialization Vectors:** Pointers required for reproducible candidate hashing.
-* **Verification Byte Strings (`/U` and `/O`):** Targets against which candidate passwords were evaluated.
+* **Verification Byte Strings (`/U` and `/O`):** Cryptographic targets against which candidate passwords were evaluated.
 
 ### 3.2 Offline Dictionary Execution
 The extracted hashes were loaded into the **Johnny GUI** wrapper interfaced directly with `john.exe`. JTR iteratively evaluated candidate wordlists in host memory, performing parallel cryptographic hashing until calculating identical digest structures.
 
 ---
 
-## 4. Step-by-Step Technical Execution & Evidence
+## 4. Step-by-Step Technical Execution
 
+### Step 1: Document Access Restriction Verification
+Pre-assessment checks on the target documents confirmed active access control restrictions. Attempting to open `My Locked PDF3.pdf` presented a standard authorization challenge, blocking document inspection without valid credentials.
 
-### Authenticated `My Locked PDF1.pdf` using `good-luck` to capture the hidden flag.
-* **Flag Captured:** `nw{cybersecurity_flag_captured_2608}`.
+### Step 2: Extraction Interface Ingestion
+The locked files were ingested into the parsing portal (`onlinehashcrack.com`) to inspect document headers and extract the `$pdf$` hash structure.
 
-![ Flag 1 Decrypted](08_target1_flag_unlocked.jpg)
-
----
-
-### Authenticated `My Locked PDF2.pdf` using `password1` to capture the hidden flag.
-* **Flag Captured:** `nw{networkwalks_persistence_jtr_270521}`.
-
-![ Flag 2 Decrypted](09_target2_flag_unlocked.jpg)
-
----
-
-### Authenticated `My Locked PDF3.pdf` using `1qaz2wsx` to capture the hidden flag
-* **Flag Captured:** `nw{networkwalks_flag_200021_1}`
-
-![Flag 3 Decrypted](10_target3_flag_unlocked.jpg)
-
----
+### Step 3: Isolating Cryptographic Hash Signatures
+The parsing engine produced standardized hash digests. Each digest was verified to ensure the string began with `$pdf$` without corrupting leading or trailing characters.
