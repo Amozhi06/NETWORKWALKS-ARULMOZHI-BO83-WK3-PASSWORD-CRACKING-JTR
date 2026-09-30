@@ -54,7 +54,7 @@ The tool converted the document metadata into a standardized `$pdf$4*...` hash f
 ### Step 4: Save Hashes into the Workspace
 Saved the isolated hash strings into separate text files (`hash1.txt`, `hash2.txt`, `hash3.txt`) ready for Johnny GUI ingestion.
 
-![Step 4 - Local Hash Files Structure](screenshots/Screenshot%202026-09-30%20163034.png)
+![Step 4 - Local Hash Files Structure](04_local_hash_files.png)
 
 ---
 
