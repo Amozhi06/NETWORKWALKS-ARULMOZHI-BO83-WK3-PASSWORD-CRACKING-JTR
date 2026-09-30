@@ -40,7 +40,7 @@ Target documents were inspected, confirming password encryption prompts blocking
 ### Step 2: Upload Target Document for Hash Parsing
 Uploaded the target PDF file to the online hash extraction tool to isolate the cryptographic signature.
 
-![Step 2 - Extractor Upload](screenshots/Screenshot%202026-09-30%20163003.png)
+![Step 2 - Extractor Upload](02_hash_extractor.png)
 
 ---
 
