@@ -78,7 +78,7 @@ Imported `hash2.txt` into Johnny GUI and initiated the dictionary attack.
 Imported `hash3.txt` into Johnny GUI and recovered the keyboard walk pattern.
 * **Recovered Key:** `1qaz2wsx`
 
-![Step 7 - Target 3 Cracked in Johnny](screenshots/Screenshot%202026-09-30%20163132.png)
+![Step 7 - Target 3 Cracked in Johnny](07_target3_cracked.png)
 
 ---
 
