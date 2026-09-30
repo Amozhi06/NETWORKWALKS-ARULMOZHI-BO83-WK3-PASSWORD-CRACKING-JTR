@@ -47,7 +47,7 @@ Uploaded the target PDF file to the online hash extraction tool to isolate the c
 ### Step 3: Extract the Cryptographic Hash Signature
 The tool converted the document metadata into a standardized `$pdf$4*...` hash format.
 
-![Step 3 - Extracted Hash Output](screenshots/Screenshot%202026-09-30%20163016.png)
+![Step 3 - Extracted Hash Output](03_extracted_hash_output.png)
 
 ---
 
